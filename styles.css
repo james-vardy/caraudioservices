@@ -1,13 +1,8 @@
-.page-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .header h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 0;
 }
 
 .section h2 {
@@ -19,9 +14,11 @@
 .body-section-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .service {
+  display: flex;
   padding-left: 1%;
   padding-right: 1%;
   padding-top: 1%;
@@ -29,10 +26,8 @@
   flex-direction: column;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 900px) {
   .service {
-    padding: auto;
-    display: flex;
     flex-direction: row;
   }
 }
@@ -43,23 +38,17 @@
   text-align: center;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  margin-left: 10%;
-  margin-right: 10%;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 900px) {
   .business-text {
     width: 40%;
   }
 }
 
-.business-image {
-  height: auto;
-  width: 100%;
-}
-
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 900px) {
   .business-image {
     height: auto;
     width: 60%;
@@ -67,42 +56,99 @@
 }
 
 .business-text {
-  padding-left: 1vh;
-  padding-right: 1vh;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .horizontal-list {
+  flex-direction: column;
   display: flex;
   list-style-type: none;
   justify-content: space-evenly;
-  flex-direction: row;
   padding-top: 10px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 900px) {
+  .horizontal-list {
+    flex-direction: row;
+  }
+}
+
+footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  padding-bottom: 10px;
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 40px;
 }
 
 h3 {
-  font-size: 42px;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
 }
 
 p {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 a {
-  font-size: 30px;
+  font-size: 15px;
 }
 
 li {
-  font-size: 30px;
+  font-size: 15px;
+}
+
+@media only screen and (min-width: 900px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  h3 {
+    font-size: 42px;
+  }
+
+  p {
+    font-size: 26px;
+  }
+
+  a {
+    font-size: 20px;
+  }
+
+  li {
+    font-size: 20px;
+  }
+}
+
+.hidden-deskop {
+  display: block;
+}
+
+@media only screen and (min-width: 900px) {
+  .hidden-desktop {
+    display: none;
+  }
+}
+
+.hidden-mobile {
+  display: none;
+}
+
+@media only screen and (min-width: 900px) {
+  .hidden-mobile {
+    display: block;
+  }
 }
 
 /* Extra small devices (phones, 600px and down)
